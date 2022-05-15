@@ -1,0 +1,101 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.todomvvm"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->G:\TodoApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->G:\TodoApp\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->G:\TodoApp\app\src\main\AndroidManifest.xml:5:5-29:19
+12        android:allowBackup="true"
+12-->G:\TodoApp\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->G:\TodoApp\app\src\main\AndroidManifest.xml:7:9-43
+16        android:label="@string/app_name"
+16-->G:\TodoApp\app\src\main\AndroidManifest.xml:8:9-41
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->G:\TodoApp\app\src\main\AndroidManifest.xml:9:9-54
+18        android:supportsRtl="true"
+18-->G:\TodoApp\app\src\main\AndroidManifest.xml:10:9-35
+19        android:testOnly="true"
+20        android:theme="@style/AppTheme" >
+20-->G:\TodoApp\app\src\main\AndroidManifest.xml:11:9-40
+21        <activity
+21-->G:\TodoApp\app\src\main\AndroidManifest.xml:12:9-113
+22            android:name="com.example.todomvvm.screens.login.LoginActivity"
+22-->G:\TodoApp\app\src\main\AndroidManifest.xml:12:19-62
+23            android:screenOrientation="fullSensor" />
+23-->G:\TodoApp\app\src\main\AndroidManifest.xml:12:63-101
+24        <activity
+24-->G:\TodoApp\app\src\main\AndroidManifest.xml:13:9-19:20
+25            android:name="com.example.todomvvm.screens.splash.SplashActivity"
+25-->G:\TodoApp\app\src\main\AndroidManifest.xml:13:19-64
+26            android:screenOrientation="fullSensor"
+26-->G:\TodoApp\app\src\main\AndroidManifest.xml:13:99-137
+27            android:theme="@style/StyleTheme" >
+27-->G:\TodoApp\app\src\main\AndroidManifest.xml:13:65-98
+28            <intent-filter>
+28-->G:\TodoApp\app\src\main\AndroidManifest.xml:14:13-18:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->G:\TodoApp\app\src\main\AndroidManifest.xml:15:17-69
+29-->G:\TodoApp\app\src\main\AndroidManifest.xml:15:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->G:\TodoApp\app\src\main\AndroidManifest.xml:17:17-77
+31-->G:\TodoApp\app\src\main\AndroidManifest.xml:17:27-74
+32            </intent-filter>
+33        </activity>
+34        <activity
+34-->G:\TodoApp\app\src\main\AndroidManifest.xml:20:9-22:46
+35            android:name="com.example.todomvvm.screens.addedittask.AddEditTaskActivity"
+35-->G:\TodoApp\app\src\main\AndroidManifest.xml:21:13-68
+36            android:label="Add a new Task" />
+36-->G:\TodoApp\app\src\main\AndroidManifest.xml:22:13-43
+37        <activity
+37-->G:\TodoApp\app\src\main\AndroidManifest.xml:23:9-24:45
+38            android:name="com.example.todomvvm.screens.tasks.TaskListActivity"
+38-->G:\TodoApp\app\src\main\AndroidManifest.xml:23:19-65
+39            android:launchMode="singleTop" />
+39-->G:\TodoApp\app\src\main\AndroidManifest.xml:24:13-43
+40
+41        <receiver android:name="com.example.todomvvm.data.notification.ReminderBroadcast" />
+41-->G:\TodoApp\app\src\main\AndroidManifest.xml:25:9-72
+41-->G:\TodoApp\app\src\main\AndroidManifest.xml:25:19-70
+42
+43        <meta-data
+43-->G:\TodoApp\app\src\main\AndroidManifest.xml:26:9-28:57
+44            android:name="preloaded_fonts"
+44-->G:\TodoApp\app\src\main\AndroidManifest.xml:27:13-43
+45            android:resource="@array/preloaded_fonts" />
+45-->G:\TodoApp\app\src\main\AndroidManifest.xml:28:13-54
+46
+47        <service
+47-->[androidx.room:room-runtime:2.2.5] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\805a1d2e9b3fbae882408f53634ffae8\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+48            android:name="androidx.room.MultiInstanceInvalidationService"
+48-->[androidx.room:room-runtime:2.2.5] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\805a1d2e9b3fbae882408f53634ffae8\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+49            android:directBootAware="true"
+49-->[androidx.room:room-runtime:2.2.5] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\805a1d2e9b3fbae882408f53634ffae8\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+50            android:exported="false" />
+50-->[androidx.room:room-runtime:2.2.5] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\805a1d2e9b3fbae882408f53634ffae8\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+51
+52        <provider
+52-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+53            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+53-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+54            android:authorities="com.example.todomvvm.lifecycle-process"
+54-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+55            android:exported="false"
+55-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+56            android:multiprocess="true" />
+56-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+57    </application>
+58
+59</manifest>
